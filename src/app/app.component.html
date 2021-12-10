@@ -1,1 +1,106 @@
-<router-outlet></router-outlet>
+<header>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand">
+            <img class="logo" [routerLink]="['/']" src="/src/assets/img/logo-senai.png">
+        </a>
+        <form class="search-bar">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+        <div class="conjunto">
+            <button class="login-button" [routerLink]="['/site2']">
+                    LOGIN
+                </button>
+
+
+            <button class="cart-button" [routerLink]="['/search-bar']">
+                    <img class="cart-image" src="https://cdn.pixabay.com/photo/2013/07/12/14/53/cart-148964_960_720.png">
+                </button>
+
+        </div>
+
+
+        <div class="navigation">
+            <ul class="nav-list">
+                <li class="" [routerLink]="['/app-produtos']">CONSOLE</li>
+                <li class="" [routerLink]="['/app-produtos']">COMPUTADORES</li>
+                <li class="" [routerLink]="['/app-produtos']">JOGOS</li>
+                <li class="" [routerLink]="['/app-produtos']">CELULAR</li>
+                <li class="" [routerLink]="['/app-produtos']">ACESSÓRIOS</li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+
+<section>
+    <main class="container">
+        <router-outlet></router-outlet>
+    </main>
+</section>
+
+
+
+
+<footer class="footer-section bg-with-black">
+    <div class="footer-top-section">
+        <div class="container-4">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <img class="logo" src="/imagens/logo-senai-azul2.png">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Redes Sociais</h3>
+                        <ul class="fta-list">
+                            <li><a href="#"><i class="fa fa-square"></i>Facebook</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Instagram</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Contate-nos</h3>
+                        <ul class="fta-list">
+                            <li>Endereço: Av. Nota Alta, 35 - Jardim Cabutim</li>
+                            <li>Telefone: (+1) 96 716 6879</li>
+                            <li>Email: contact@site.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-area">
+        <div class="container-4">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="footer-bottom">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="fba-copyright">
+                                    <p>Copyright ©2021 Desenvolvido por Senai. Todos os direitos reservados.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="fba-links">
+                                    <ul>
+                                        <li><a href="#">Sobre nós</a></li>
+                                        <li><a href="#">Contate-nos</a></li>
+                                        <li><a href="#">Termos & Condições</a></li>
+                                        <li><a href="#">Política de Privacidade</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
